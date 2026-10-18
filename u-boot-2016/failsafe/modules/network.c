@@ -26,7 +26,7 @@
 # if defined(CONFIG_IPADDR)
 static const char *default_ipaddr = __stringify(CONFIG_IPADDR);
 # else
-static const char *default_ipaddr = "192.168.1.1";
+static const char *default_ipaddr = "192.168.10.1";
 # endif /* CONFIG_IPADDR */
 # if defined(CONFIG_NETMASK)
 static const char *default_netmask = __stringify(CONFIG_NETMASK);
@@ -36,7 +36,7 @@ static const char *default_netmask = "255.255.255.0";
 # if defined(CONFIG_SERVERIP)
 static const char *default_serverip = __stringify(CONFIG_SERVERIP);
 # else
-static const char *default_serverip = "192.168.1.2";
+static const char *default_serverip = "192.168.10.2";
 # endif /* CONFIG_SERVERIP */
 
 static void handle_response_message(struct httpd_response *response,

@@ -235,7 +235,7 @@ void do_network_check(void)
 #ifdef CONFIG_IPADDR
 	default_ipaddr = __stringify(CONFIG_IPADDR);
 #else
-	default_ipaddr = "192.168.1.1";
+	default_ipaddr = "192.168.10.1";
 #endif /* CONFIG_IPADDR */
 #ifdef CONFIG_NETMASK
 	default_netmask = __stringify(CONFIG_NETMASK);
@@ -245,7 +245,7 @@ void do_network_check(void)
 #ifdef CONFIG_SERVERIP
 	default_serverip = __stringify(CONFIG_SERVERIP);
 #else
-	default_serverip = "192.168.1.2";
+	default_serverip = "192.168.10.2";
 #endif /* CONFIG_SERVERIP */
 
 	current_ipaddr = getenv("ipaddr");
